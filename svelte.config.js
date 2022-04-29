@@ -12,7 +12,7 @@ const config = {
 			extensions: ['.md'],
 			layout: {
 				posts: 'src/routes/posts/_posts.svelte'
-			} 
+			}
 		})
 	],
 

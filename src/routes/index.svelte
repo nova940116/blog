@@ -12,12 +12,10 @@
 </script>
 
 <script>
-  import RecentPosts from '../components/recentPosts.svelte'
   export let posts
 </script>
 
-<section class="p-4 flex flex-row">
-  <RecentPosts posts={posts} />  
+<section>
   <ul>
     {#each posts as post}
       <li>

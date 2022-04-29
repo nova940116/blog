@@ -1,8 +1,21 @@
+<script context="module">
+  export const load = async ({ fetch }) => {
+    const posts = await fetch('/api/posts.json')
+    const allPosts = await posts.json()
+    return {
+      props: {
+        posts: allPosts
+      }
+    }
+  }
+</script>
+
 <script>
   import { onMount } from 'svelte'
   import RecentPosts from '../components/recentPosts.svelte'
   import "../app.css"
-
+  
+  export let posts
   let mode
 
   onMount(() => { 
@@ -38,7 +51,10 @@
   </header>
   <section class="h-5 bg-slate-700" />
   
-  <main class="p-4">
+  <main class="p-20 flex flex-row">
+    <section>
+      <RecentPosts posts={posts} />  
+    </section>
     <slot />
   </main>
   
