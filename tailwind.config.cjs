@@ -8,7 +8,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
   darkMode: 'class',
   mode: 'jit'
 }

@@ -3,46 +3,14 @@
   @import url('../../custom-theme.css');
 </style>
 <script>
+  import Toc from 'svelte-toc'
   import { onMount } from 'svelte'
   import MediaQuery from "../../components/mediaQuery.svelte"
-  export let title, date, update, categories, indexs
+  export let title, date, update, categories
 
   onMount(() => {
-    const highlights = document.querySelectorAll("pre[class*='language-']")
-
-    const copyToClipboard = str => {
-      const el = document.createElement("textarea") 
-      el.value = str 
-      el.setAttribute("readonly", "")
-      el.style.position = "absolute"
-      el.style.left = "-9999px" 
-      document.body.appendChild(el) 
-      const selected =
-        document.getSelection().rangeCount > 0 
-          ? document.getSelection().getRangeAt(0) 
-          : false 
-      el.select() 
-      document.execCommand("copy") 
-      document.body.removeChild(el) 
-      if (selected) {
-        document.getSelection().removeAllRanges() 
-        document.getSelection().addRange(selected)
-      }
-    }    
-
-    const handleCopyClick = (evt) => {
-      const { children } = evt.target.parentElement
-      const { innerText } = Array.from(children)[0]
-      copyToClipboard(innerText)
-    }
-    
-    highlights.forEach(div => {
-      const copy = document.createElement("button")
-      copy.classList.add("copy-button")
-      copy.innerHTML = "Copy"
-      copy.addEventListener("click", handleCopyClick)
-      div.append(copy)
-    })
+    const hTag = document.querySelectorAll('h')
+    console.log(hTag, '@hTag')
   })
 </script>
 
@@ -53,7 +21,7 @@
 
 <div class="flex flex-row w-full">
   <section class="w-3/4">
-    <h1 class="lg:text-5xl text-2xl">{title}</h1>
+    <p class="lg:text-5xl text-2xl">{title}</p>
     <div class="pt-8 w-40 border-b-2" />
     <div class="pt-3">
       <p>작성일: {date}</p>
@@ -62,7 +30,9 @@
       {/if}
     </div>
     <div class="mt-20">
-      <slot />
+      <article class="prose prose-lg dark:prose-invert">
+        <slot />
+      </article>
     </div>
   
     <section class="mt-14">
@@ -93,10 +63,10 @@
   
     {#if categories.length}
     <aside class="mt-12">
-      <h2 class="text-2xl pb-3">TAG:</h2>
+      <p class="text-2xl pb-3">TAG:</p>
       <ul class="flex">
         {#each categories as category}
-        <li class="bg-slate-700 px-3 py-2 mr-2 font-semibold text-xs text-white">
+        <li class="dark:bg-slate-700 bg-slate-200  px-3 py-2 mr-2 font-semibold text-xs dark:text-white text-black">
             <a href="/blog/categories/{category}">
               {category}
             </a>
@@ -108,16 +78,6 @@
   </section>
 
   <MediaQuery query="(min-width: 1281px)" let:matches>
-    {#if matches}
-    <section>
-      <ul class="fixed">
-        {#each indexs as index}
-        <li class="pl-10 py-2 mr-2 text-lg text-white">
-          {index}
-        </li>
-        {/each}
-      </ul>
-    </section>
-    {/if}
+    <Toc title='' />
   </MediaQuery>
 </div>

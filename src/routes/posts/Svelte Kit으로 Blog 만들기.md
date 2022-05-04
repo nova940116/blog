@@ -5,21 +5,14 @@ update: ''
 categories:
   - 'SVELTE'
   - 'JAVASCRIPT'
-indexs:
-  - '목차1sadsadsadsadasdasdas'
-  - '목차2'
 ---
 
 ![svelte-themenail](../svelte-themenail.png)
 
-<h2 class="text-2xl" id="팁">팁</h2>
+## 1장. 깨끗한 코드
 
-```js
-let count = 0
+### 보이스카우트 규칙
 
-const handleFunction = () => {
-	return 'hi'
-}
-```
-
-<h2 class="text-2xl" id="배열">배열</h2>
+- 코드는 잘 짜기만 했을 때 끝나는 것이 아닌, 시간이 지나도 언제나 깨끗하게 유지해야 한다.
+- 보이스카우트 규칙
+  `캠프장은 처음 왔을 때 보다 더 깨끗하게 해놓고 떠나라`
