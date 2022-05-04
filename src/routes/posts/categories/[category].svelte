@@ -22,11 +22,11 @@
   <ul>
     {#each posts as post}
       <li>
-        <h2>
+        <p>
           <a href={post.path}>
             {post.meta.title}
           </a>
-        </h2>
+        </p>
         {post.meta.date}
       </li>
     {/each}

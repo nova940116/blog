@@ -1,5 +1,5 @@
 <style>
-  @import url('../../prism-duotone-sea.css');
+  @import url('../../prism-a11y-dark.css');
   @import url('../../custom-theme.css');
 </style>
 <script>
@@ -63,7 +63,7 @@
   
     {#if categories.length}
     <aside class="mt-12">
-      <p class="text-2xl pb-3">TAG:</p>
+      <p class="text-2xl font-semibold pb-3">CATEGORIES -</p>
       <ul class="flex">
         {#each categories as category}
         <li class="dark:bg-slate-700 bg-slate-200  px-3 py-2 mr-2 font-semibold text-xs dark:text-white text-black">

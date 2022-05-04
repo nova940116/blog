@@ -9,22 +9,22 @@
 <MediaQuery query="(min-width: 1281px)" let:matches>
   {#if matches}
   <section class="w-80">
-    <h2 class="inline-block border-b-2 mb-2">RECENT BLOG POSTS</h2>
+    <p class="inline-block border-b-2 mb-2">RECENT BLOG POSTS</p>
     <ul>
       {#each posts as post}
         <li>
-          <h2>
+          <p>
             <a href={post.path}>
               {post.meta.title}
             </a>
-          </h2>
+          </p>
         </li>
       {/each}
     </ul>
   </section>
 
   <section>
-    <h2 class="inline-block border-b-2 mb-2 mt-8">CATEGORIES</h2>
+    <p class="inline-block border-b-2 mb-2 mt-8">CATEGORIES</p>
     {#if categories.length}
     <aside>
       <ul class="flex">
