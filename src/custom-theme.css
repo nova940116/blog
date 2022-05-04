@@ -1,0 +1,25 @@
+/* custem code start */
+pre[class*=language-]:before {
+	color: #fff;
+	font-size: .8rem;
+	font-weight: 400;
+	height: 40px;
+}
+pre[class*=language-js]:before {
+	content: 'JavaScript';
+}
+code[class*="language-"] {
+	display: block;
+	margin-top: 10px;
+}
+.copy-button {
+	position: relative;
+  top: -125px;
+  left: 100%;
+  margin-left: -35px;
+	color: #fff;
+}
+.copy-button:active {
+  color: cadetblue;
+}
+/* custem code end */

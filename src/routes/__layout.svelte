@@ -1,8 +1,25 @@
+<script context="module">
+  export const load = async ({ fetch, url }) => {
+    const currentRoute = url.pathname
+    const posts = await fetch('/api/posts.json')
+    const recentPosts = await posts.json()
+
+    return {
+      props: {
+        posts: recentPosts,
+        currentRoute
+      }
+    }
+  }
+</script>
+
 <script>
   import { onMount } from 'svelte'
+  import { fade } from 'svelte/transition'
   import RecentPosts from '../components/recentPosts.svelte'
   import "../app.css"
-
+  
+  export let currentRoute, posts
   let mode
 
   onMount(() => { 
@@ -38,9 +55,14 @@
   </header>
   <section class="h-5 bg-slate-700" />
   
-  <main class="p-4">
+  {#key currentRoute}
+  <main class="xl:p-20 flex flex-row" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+    <section>
+      <RecentPosts posts={posts} />  
+    </section>
     <slot />
   </main>
+  {/key}
   
   <footer class="h-12 flex flex-row justify-between p-4 items-center">Hello, I'm the footer.</footer>
 </div>
