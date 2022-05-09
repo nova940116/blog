@@ -43,16 +43,8 @@
           <p class="pb-4">프론트엔드 개발자 윤정현 입니다. <br />개발자 경험을 향상시키기 위해 노력합니다 :)</p>
           <ul>
             <li>
-              <p class="font-bold">EMAIL</p>
+              <p class="font-bold">📧 EMAIL</p>
               <p>nova940116@gmail.com</p>
-            </li>
-            <li>
-              <p class="font-bold">GITHUB</p>
-              <a href="https://github.com/nova940116">https://github.com/nova940116</a>
-            </li>
-            <li>
-              <p class="font-bold">INSTAGRAM</p>
-              <a href="https://www.instagram.com/nova_940116">https://www.instagram.com/nova_940116</a>
             </li>
           </ul>
         </div>

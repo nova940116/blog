@@ -1,12 +1,14 @@
-/* custem code start */
-:root {
-	--darkBlueHSL: 201, 42%, 35%;
+
+/* svelte-toc */
+aside.toc > nav > ul > li {
+	padding: 4px 8px;
 }
 
+/* custem code start */
 pre[class*=language-] {
 	position: relative;
 	overflow: auto;
-	padding-top: 35px;
+	padding-top: 40px;
 }
 pre[class*=language-]:before {
 	color: #fff;
@@ -26,17 +28,18 @@ code[class*="language-"] {
 	display: block;
 	margin-top: 10px;
 }
-.copy-button {
-	position: relative;
-  top: -125px;
-  left: 100%;
-  margin-left: -35px;
-	color: #fff;
+code {
+	border-radius: 3px;
+	padding: 4px 7px;
+	background-color: #32637c;
 }
-.copy-button:active {
-  color: cadetblue;
+code::before, code::after {
+	content: "" !important;
 }
+
+
 
 pre[class*=language-js]:before { content: 'JavaScript'; }
 pre[class*=language-svelte]:before { content: 'Svelte'; }
+pre[class*=language-bash]:before { content: 'Terminal'; }
 /* custem code end */

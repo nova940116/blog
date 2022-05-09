@@ -39,7 +39,7 @@
 <div class="w-screen bg-white dark:bg-dark text-dark dark:text-white flex flex-col">
   <header class="h-12 flex flex-row justify-between p-4 items-center">
     <div>
-      <a href="/">노바유니버스 - 블로그</a>
+      <a href="/">Nova Blog</a>
     </div>
     <button on:click={changeMode}>
       {#if mode !== 'dark'}
@@ -64,5 +64,21 @@
   </main>
   {/key}
   
-  <footer class="h-12 flex flex-row justify-between p-4 items-center">Hello, I'm the footer.</footer>
+  <section class="h-5 bg-slate-700" />
+  <footer class="flex flex-row p-12 justify-around items-center">
+    <nav>
+      <ul>
+        <p class="font-bold">LINKS</p>
+        <li class="underline"><a href="https://github.com/nova940116">GITHUB</a></li>
+        <li class="underline"><a href="https://www.facebook.com/junghyun.yoon.35912/">FACEBOOK</a></li>
+      </ul>
+    </nav>
+    <section>
+      <p>2022 Nova(Jeonghyun Yoon)</p>
+      <p>Made With 
+        <a class="underline" href="https://kit.svelte.dev/">SvelteKit</a>; hosted on 
+        <a class="underline" href="https://vercel.com/">Vercel</a>
+      </p>
+    </section>
+  </footer>
 </div>
