@@ -3,6 +3,7 @@
   import MediaQuery from "../components/mediaQuery.svelte"
   let categories = []
   posts.map(v => categories.push(...v.meta.categories))
+  categories = [...new Set(categories)]
 </script>
 
 
@@ -27,9 +28,9 @@
     <p class="inline-block border-b-2 mb-2 mt-8">CATEGORIES</p>
     {#if categories.length}
     <aside>
-      <ul class="flex">
+      <ul class="flex flex-wrap">
         {#each categories as category}
-          <li class="dark:bg-slate-700 bg-slate-200  px-3 py-2 mr-2 font-semibold text-xs dark:text-white text-black">
+          <li class=" dark:bg-slate-700 bg-slate-300  px-3 py-2 mr-1.5 mt-1.5 font-semibold text-xs dark:text-white text-black">
             <a href="/posts/categories/{category}">
               {category}
             </a>

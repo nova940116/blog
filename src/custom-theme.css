@@ -45,6 +45,7 @@ code::before, code::after {
 pre[class*=language-js]:before { content: 'JavaScript'; }
 pre[class*=language-svelte]:before { content: 'Svelte'; }
 pre[class*=language-bash]:before { content: 'Terminal'; }
+pre[class*=language-html]:before { content: 'HTML'; }
 pre[class*=language-fs]:before { content: 'Project Files'; }
 div[class*=side-note]::before { 
 	content: '주의 💡';
