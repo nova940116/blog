@@ -36,10 +36,19 @@ code {
 code::before, code::after {
 	content: "" !important;
 }
-
-
+.side-note {
+	background-color: #192631;
+	padding: 30px;
+	font-size: 1rem;
+}
 
 pre[class*=language-js]:before { content: 'JavaScript'; }
 pre[class*=language-svelte]:before { content: 'Svelte'; }
 pre[class*=language-bash]:before { content: 'Terminal'; }
+pre[class*=language-fs]:before { content: 'Project Files'; }
+div[class*=side-note]::before { 
+	content: '주의 💡';
+	font-weight: bold; 
+	display: block;
+}
 /* custem code end */

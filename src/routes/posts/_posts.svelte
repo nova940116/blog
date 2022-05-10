@@ -4,14 +4,8 @@
 </style>
 <script>
   import Toc from 'svelte-toc'
-  import { onMount } from 'svelte'
   import MediaQuery from "../../components/mediaQuery.svelte"
   export let title, date, update, categories
-
-  onMount(() => {
-    const hTag = document.querySelectorAll('h')
-    console.log(hTag, '@hTag')
-  })
 </script>
 
 <svelte:head>
@@ -20,7 +14,7 @@
 </svelte:head>
 
 <div class="flex flex-row w-full">
-  <section class="w-3/4">
+  <section class="w-full xl:w-3/4 p-4 lg:p-12 xl:p-0">
     <p class="lg:text-5xl text-2xl">{title}</p>
     <div class="pt-8 w-40 border-b-2" />
     <div class="pt-3">

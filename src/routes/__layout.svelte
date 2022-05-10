@@ -65,7 +65,7 @@
   {/key}
   
   <section class="h-5 bg-slate-700" />
-  <footer class="flex flex-row p-12 justify-around items-center">
+  <footer class="flex flex-col md:flex-row p-12 justify-around md:items-center">
     <nav>
       <ul>
         <p class="font-bold">LINKS</p>
@@ -73,7 +73,7 @@
         <li class="underline"><a href="https://www.facebook.com/junghyun.yoon.35912/">FACEBOOK</a></li>
       </ul>
     </nav>
-    <section>
+    <section class="mt-6 md:mt-0">
       <p>2022 Nova(Jeonghyun Yoon)</p>
       <p>Made With 
         <a class="underline" href="https://kit.svelte.dev/">SvelteKit</a>; hosted on 

@@ -16,9 +16,7 @@ const config = {
 		})
 	],
 
-	kit: {
-		adapter: adapter()
-	},
+	kit: {},
 	extensions: ['.svelte', '.md'],
 }
 
