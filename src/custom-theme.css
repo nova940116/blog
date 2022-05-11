@@ -48,7 +48,7 @@ pre[class*=language-bash]:before { content: 'Terminal'; }
 pre[class*=language-html]:before { content: 'HTML'; }
 pre[class*=language-fs]:before { content: 'Project Files'; }
 div[class*=side-note]::before { 
-	content: '주의 💡';
+	content: 'NOTE 💡';
 	font-weight: bold; 
 	display: block;
 }
