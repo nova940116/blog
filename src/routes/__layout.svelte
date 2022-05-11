@@ -65,8 +65,8 @@
   {/key}
   
   <section class="h-5 bg-slate-700" />
-  <footer class="flex flex-col md:flex-row p-12 justify-around md:items-center">
-    <nav>
+  <footer class="h-36 flex flex-row justify-between p-12 items-center">
+    <nav class="">
       <ul>
         <p class="font-bold">LINKS</p>
         <li class="underline"><a href="https://github.com/nova940116">GITHUB</a></li>
@@ -74,8 +74,8 @@
       </ul>
     </nav>
     <section class="mt-6 md:mt-0">
-      <p>2022 Nova(Jeonghyun Yoon)</p>
-      <p>Made With 
+      <p class="italic">2022 Nova(Jeonghyun Yoon)</p>
+      <p class="italic">Made With 
         <a class="underline" href="https://kit.svelte.dev/">SvelteKit</a>; hosted on 
         <a class="underline" href="https://vercel.com/">Vercel</a>
       </p>
