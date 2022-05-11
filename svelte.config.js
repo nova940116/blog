@@ -17,7 +17,7 @@ const config = {
 		})
 	],
   kit: {
-    // default options are shown
+    floc: true, // interest-cohort warning 제거(floc)
     adapter: vercel({
       // if true, will deploy the app using edge functions
       // (https://vercel.com/docs/concepts/functions/edge-functions)

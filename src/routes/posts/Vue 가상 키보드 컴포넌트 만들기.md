@@ -12,8 +12,6 @@ categories:
   - 'TYPESCRIPT'
 ---
 
-![vue-virtual-keyboard-themenail](../posts/vue-virtual-keyboard-themenail.png)
-
 ## 들어가기
 
 ---
@@ -224,5 +222,5 @@ Click된 값을 부모에게 전달 합니다. 여기까지가 간단한 동작 
   <source src="../videos/virtual-keyboard.webm" type="video/webm">
 </video>
 
-이제 웹앱 내에 가상 키보드가 필요한곳이 있다면 컴포넌트를 호출하는것 만으로 손쉽게 사용 할 수 있게 되었습니다.
-응용하여 영문 키보드, 숫자 키패드 등으로도 응용이 가능 할 것 입니다.
+이제 Vue 웹앱 내에 가상 키보드가 필요한곳이 있다면 컴포넌트를 호출하는것 만으로 손쉽게 사용 할 수 있게 되었습니다.
+이를 응용하면 영문 키보드, 숫자 키패드 등으로도 변화를 줄 수 있습니다.
