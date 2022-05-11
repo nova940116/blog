@@ -33,11 +33,13 @@
       </div>
     
       <section class="mt-14">
-        <hr class="h-px border-0 bg-gradient-to-r from-cyan-500 to-blue-500" />
-        <div class="flex sm:flex-row flex-col items-center my-11">
-          <img class="w-28 h-28 mb-10 sm:mb-0 rounded-full flex" src="/my-profile.jpg" alt="my profile" />
-          <div class="ml-8">
-            <p class="pb-4">프론트엔드 개발자 윤정현 입니다. <br />개발자 경험을 향상시키기 위해 노력합니다 :)</p>
+        <hr class="h-px border-0 bg-gradient-to-r from-cyan-500 to-fuchsia-500" />
+        <div class="flex sm:flex-row flex-col sm:items-center my-11">
+          <div class="flex justify-center">
+            <img class="w-32 h-32 mb-10 sm:mb-0 rounded-full flex" src="/my-profile.jpg" alt="my profile" />
+          </div>
+          <div class="sm:ml-8">
+            <p class="pb-4 italic">프론트엔드 개발자 윤정현 입니다. <br />개발자 경험을 향상시키기 위해 노력합니다 :)</p>
             <ul>
               <li>
                 <p class="font-bold">📧 EMAIL</p>
@@ -46,7 +48,7 @@
             </ul>
           </div>
         </div>
-        <hr class="h-px border-0 bg-gradient-to-r from-cyan-500 to-blue-500" />
+        <hr class="h-px border-0 bg-gradient-to-r from-fuchsia-500 to-cyan-500" />
       </section>
     
     

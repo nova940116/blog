@@ -39,7 +39,7 @@
 <div class="w-screen bg-white dark:bg-dark text-dark dark:text-white flex flex-col">
   <header class="h-12 flex flex-row justify-between p-4 items-center">
     <div>
-      <a href="/">Nova Blog</a>
+      <a href="/" class="text-lg font-bold">Nova Blog</a>
     </div>
     <button on:click={changeMode}>
       {#if mode !== 'dark'}
@@ -65,7 +65,7 @@
   {/key}
   
   <section class="h-5 bg-slate-700" />
-  <footer class="h-36 flex flex-row justify-between p-12 items-center">
+  <footer class="h-auto flex flex-col sm:flex-row p-4 sm:p-12 sm:justify-between">
     <nav class="">
       <ul>
         <p class="font-bold">LINKS</p>
