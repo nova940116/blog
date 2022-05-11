@@ -2,6 +2,10 @@
 title: Vue 한글 가상 키보드 컴포넌트 만들기
 date: '2022-05-10'
 update: ''
+image: '../posts/vue-virtual-keyboard-themenail.png'
+summary: '키오스크에서 회원가입을 받거나 할 때는 터치스크린을 이용해야 하기 때문에
+가상키보드가 필요합니다. 특히 한글을 지원해야 한다면 자음, 모음에 대한 처리가 필요합니다. Vue를 이용해서 가상키보드를 컴포넌트화 하여,
+필요한 부분마다 호출하여 사용 할 수 있도록 해봅시다.'
 categories:
   - 'VUE'
   - 'JAVASCRIPT'
@@ -219,3 +223,6 @@ Click된 값을 부모에게 전달 합니다. 여기까지가 간단한 동작 
 <video autoplay loop muted playsinline>
   <source src="../videos/virtual-keyboard.webm" type="video/webm">
 </video>
+
+이제 웹앱 내에 가상 키보드가 필요한곳이 있다면 컴포넌트를 호출하는것 만으로 손쉽게 사용 할 수 있게 되었습니다.
+응용하여 영문 키보드, 숫자 키패드 등으로도 응용이 가능 할 것 입니다.

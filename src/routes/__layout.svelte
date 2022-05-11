@@ -56,7 +56,7 @@
   <section class="h-5 bg-slate-700" />
   
   {#key currentRoute}
-  <main class="xl:p-20 flex flex-row" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+  <main class="xl:p-20 flex flex-row min-h-screen" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
     <section>
       <RecentPosts posts={posts} />  
     </section>
