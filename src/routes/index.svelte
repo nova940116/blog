@@ -17,7 +17,7 @@
 <section class="w-full xl:w-2/4 p-8 xl:p-0">
   <ul>
     {#each posts as post}
-      <li>
+      <li class="mb-24">
         <article class="block lg:grid lg:grid-cols-2 lg:gap-12">
           <a class="w-full" href={post.path}>
             <img src={post.meta.image} alt={post.meta.image}/>  

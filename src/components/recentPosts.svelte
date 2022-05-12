@@ -24,7 +24,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="w-80">
     <p class="inline-block border-b-2 mb-2 mt-8 dark:border-slate-600 border-dark">CATEGORIES</p>
     {#if categories.length}
     <aside>

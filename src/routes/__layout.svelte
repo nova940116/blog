@@ -26,11 +26,7 @@
     mode = window.localStorage.getItem('mode') || 'dark'
     screen = window.matchMedia("(max-width: 1200px)")
     if(mode === 'dark') window.document.body.classList.add('dark')
-    else {
-      const code = document.getElementsByTagName("code")
-      for(let v of code) { v.style.color = '#fff' }
-      window.document.body.classList.remove('dark')
-    }
+    else window.document.body.classList.remove('dark')
   })
 
   const changeMode = () => {

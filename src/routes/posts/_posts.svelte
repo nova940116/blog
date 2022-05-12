@@ -9,9 +9,7 @@
   export let title, date, update, categories, image, summary
   let mode
 
-  onMount(() => { 
-    mode = window.localStorage.getItem('mode') || 'dark'
-  })  
+  onMount(() => { mode = window.localStorage.getItem('mode') || 'dark' })  
 </script>
 
 <svelte:head>
