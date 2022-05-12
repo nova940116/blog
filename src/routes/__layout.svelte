@@ -30,14 +30,16 @@
   })
 
   const changeMode = () => {
+    mode = mode === 'dark' ? 'white' : 'dark'
     const message = {
       type: 'set-theme',
-      theme: mode === 'dark' ? 'github-light' : 'github-dark'
+      theme: mode === 'dark' ? 'github-dark' : 'github-light'
     }
+    
     const utterances = document.querySelector('iframe')
-    utterances.contentWindow.postMessage(message, 'https://utteranc.es')
+    if(utterances) utterances.contentWindow.postMessage(message, 'https://utteranc.es')
 
-    window.localStorage.setItem('mode', mode === 'dark' ? 'white' : 'dark')
+    window.localStorage.setItem('mode', mode)
 	  window.document.body.classList.toggle('dark')
   }
 </script>
