@@ -3,9 +3,15 @@
   @import url('../../custom-theme.css');
 </style>
 <script>
+  import { onMount } from 'svelte'
   import Toc from 'svelte-toc'
   import MediaQuery from "../../components/mediaQuery.svelte"
   export let title, date, update, categories, image, summary
+  let mode
+
+  onMount(() => { 
+    mode = window.localStorage.getItem('mode') || 'dark'
+  })  
 </script>
 
 <svelte:head>
@@ -66,6 +72,17 @@
         </ul>
       </aside>
       {/if}  
+      <!-- comment -->
+      <div class="mt-8">
+        <script src="https://utteranc.es/client.js"
+          repo="nova940116/blog"
+          issue-term="pathname"
+          theme={mode === 'dark' ? "github-dark" : "github-light"}
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+
     </section>
   </div>
 

@@ -2,7 +2,6 @@
   export const load = async ({ fetch }) => {
     const posts = await fetch('/api/posts.json')
     const allPosts = await posts.json()
-    console.log(allPosts, '@allp')
     return {
       props: {
         posts: allPosts

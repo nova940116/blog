@@ -4,6 +4,13 @@ aside.toc > nav > ul > li {
 	padding: 4px 8px;
 }
 
+/* responsive code block */
+@media screen and (max-width: 640px) {
+  code {
+    width: 280px;
+  }
+}
+
 /* custem code start */
 pre[class*=language-] {
 	position: relative;
@@ -40,6 +47,7 @@ code::before, code::after {
 	background-color: #192631;
 	padding: 30px;
 	font-size: 1rem;
+	color: #fff;
 }
 
 pre[class*=language-js]:before { content: 'JavaScript'; }

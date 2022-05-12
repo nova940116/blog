@@ -26,12 +26,22 @@
     mode = window.localStorage.getItem('mode') || 'dark'
     screen = window.matchMedia("(max-width: 1200px)")
     if(mode === 'dark') window.document.body.classList.add('dark')
-    else window.document.body.classList.remove('dark')
+    else {
+      const code = document.getElementsByTagName("code")
+      for(let v of code) { v.style.color = '#fff' }
+      window.document.body.classList.remove('dark')
+    }
   })
 
   const changeMode = () => {
-    mode = mode === 'dark' ? 'white' : 'dark'
-    window.localStorage.setItem('mode', mode)
+    const message = {
+      type: 'set-theme',
+      theme: mode === 'dark' ? 'github-light' : 'github-dark'
+    }
+    const utterances = document.querySelector('iframe')
+    utterances.contentWindow.postMessage(message, 'https://utteranc.es')
+
+    window.localStorage.setItem('mode', mode === 'dark' ? 'white' : 'dark')
 	  window.document.body.classList.toggle('dark')
   }
 </script>
@@ -53,7 +63,7 @@
       {/if}
     </button>
   </header>
-  <section class="h-5 bg-slate-700" />
+  <section class="h-5 dark:bg-slate-700 bg-dark" />
   
   {#key currentRoute}
   <main class="xl:p-20 flex flex-row min-h-screen" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
@@ -64,7 +74,7 @@
   </main>
   {/key}
   
-  <section class="h-5 bg-slate-700" />
+  <section class="h-5 dark:bg-slate-700 bg-dark" />
   <footer class="h-auto flex flex-col sm:flex-row p-4 sm:p-12 sm:justify-between">
     <nav class="">
       <ul>
