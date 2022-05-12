@@ -29,7 +29,7 @@
         
           <div class="mt-4 lg:mt-0">
             <a class="text-2xl font-bold hover:text-slate-400" href={post.path}>
-              {post.meta.title}
+              <h1>{post.meta.title}</h1>
             </a>
             <p class="mt-5">{post.meta.summary}</p>
           </div>
