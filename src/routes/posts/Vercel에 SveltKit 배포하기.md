@@ -11,7 +11,7 @@ categories:
   - 'JAVASCRIPT'
 ---
 
-## 들어가기
+# 들어가기
 
 ---
 
@@ -20,7 +20,9 @@ SvelteKit이 이와 다른점은 `Adapter` 를 통해 배포할 Target을 미리
 대표적인 정적 컨텐츠 호스팅 서비스중 하나인 `Vercel` 에 SvelteKit을 손쉽게 배포하는 방법을 알아보겠습니다.
 Sveltekit App은 이미 설치되어 있다고 가정하겠습니다.
 
-## 배포를 위한 Adapter 설정하기
+<br />
+
+# 배포를 위한 Adapter 설정하기
 
 ---
 
@@ -39,7 +41,9 @@ const config = {
 
 추가 한 후에 `npm run build` 명령어(혹은 `svelte-kit build`)를 실행시키면 `.vercel_build_output` 라는 이름으로 정적파일이 생성 됩니다.
 
-## Vercel에 배포하기
+<br />
+
+# Vercel에 배포하기
 
 ---
 

@@ -50,6 +50,9 @@ code::before, code::after {
 	font-size: 1rem;
 	color: #fff;
 }
+h1 {
+	font-size: 2.4rem !important;
+}
 
 pre[class*=language-js]:before { content: 'JavaScript'; }
 pre[class*=language-svelte]:before { content: 'Svelte'; }
