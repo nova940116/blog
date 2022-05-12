@@ -79,8 +79,8 @@
     <nav class="">
       <ul>
         <p class="font-bold">LINKS</p>
-        <li class="underline"><a href="https://github.com/nova940116" target="_blank">GITHUB</a></li>
-        <li class="underline"><a href="https://www.facebook.com/junghyun.yoon.35912/" target="_blank">FACEBOOK</a></li>
+        <li class="underline"><a href="https://github.com/nova940116" target="_blank" rel="noopener" >GITHUB</a></li>
+        <li class="underline"><a href="https://www.facebook.com/junghyun.yoon.35912/" target="_blank" rel="noopener">FACEBOOK</a></li>
       </ul>
     </nav>
     <section class="mt-6 md:mt-0">
