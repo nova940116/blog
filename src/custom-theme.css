@@ -3,6 +3,9 @@
 aside.toc > nav > ul > li {
 	padding: 4px 8px;
 }
+aside.toc > nav > ul > .active { 
+	color: #fff;
+}
 
 /* responsive code block */
 @media screen and (max-width: 640px) {
