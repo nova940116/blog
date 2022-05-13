@@ -50,7 +50,7 @@ code::before, code::after {
 	font-size: 1rem;
 	color: #fff;
 }
-img {
+img, video {
 	border: 1px solid black;
 }
 
