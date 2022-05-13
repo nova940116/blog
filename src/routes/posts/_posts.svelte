@@ -5,7 +5,8 @@
 <script>
   import { onMount } from 'svelte'
   import Toc from 'svelte-toc'
-  export let title, date, update, categories, image, summary, mode
+  export let title, date, update, categories, image, summary
+  let mode
   onMount(async () => { mode = window.localStorage.getItem('mode') || 'dark' })
 </script>
 
