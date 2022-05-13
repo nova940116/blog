@@ -12,7 +12,7 @@ categories:
   - 'TYPESCRIPT'
 ---
 
-# 들어가기
+## 들어가기
 
 ---
 
@@ -20,9 +20,7 @@ categories:
 가상키보드가 필요합니다. 특히 한글을 지원해야 한다면 자음, 모음에 대한 처리가 필요합니다. Vue를 이용해서 가상키보드를 컴포넌트화 하여,
 필요한 부분마다 호출하여 사용 할 수 있도록 해봅시다.
 
-<br />
-
-# Vue App 만들기
+## Vue App 만들기
 
 ---
 
@@ -34,7 +32,7 @@ Vue 공식 웹사이트의 [Quick Start] 페이지를 참고하여 Vue App을 �
 - Prettier
 - Vue Router
 
-[quick start]: https://vuejs.org/guide/quick-start.html#with-build-tools
+[quick start]: https://vuejs.org/guide/quick-start.html##with-build-tools
 
 App.vue의 불필요한 코드를 지우고 다음과 같이 작성합니다.
 
@@ -48,8 +46,6 @@ App.vue의 불필요한 코드를 지우고 다음과 같이 작성합니다.
 	<RouterView />
 </template>
 ```
-
-<br />
 
 `router/index.ts` 에서(혹은 index.js) rootPath(`/`)에 보일 페이지를 설정해줍니다. `App.view`의 RouterView를 통해 보이게 됩니다.
 
@@ -74,9 +70,7 @@ export default router
 
 아직 `views` 경로에 `Main.vue` 파일이 존재하지 않아 실행되지 않습니다. 본격적으로 가상키보드 컴포넌트를 만들어 보겠습니다.
 
-<br />
-
-# 가상키보드 컴포넌트 만들기
+## 가상키보드 컴포넌트 만들기
 
 ---
 
@@ -144,11 +138,11 @@ const sendChar = (event: any) => {
   text-align: center;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid ##dbdbdb;
   padding: 20px;
   font-size: 40px;
   font-weight: 800;
-  background-color: #fff;
+  background-color: ##fff;
 }
 tr {
   display: flex;
@@ -162,7 +156,7 @@ td {
   user-select: none;
 }
 td:active {
-  background-color: #dbdbdb;
+  background-color: ##dbdbdb;
 }
 </style>
 ```
@@ -216,9 +210,7 @@ Click된 값을 부모에게 전달 합니다. 여기까지가 간단한 동작 
 
 현재 디렉토리 구조는 이렇습니다.
 
-<br />
-
-# 결과 확인하기
+## 결과 확인하기
 
 ---
 

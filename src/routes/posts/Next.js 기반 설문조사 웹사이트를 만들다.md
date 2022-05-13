@@ -11,7 +11,7 @@ categories:
   - 'NEXT.JS'
 ---
 
-# 들어가기
+## 들어가기
 
 ---
 
@@ -22,9 +22,7 @@ categories:
 
 [https://survey.novauniverse.me/chicken]: https://survey.novauniverse.me/chicken
 
-<br />
-
-# 설문 항목 작성 페이지
+## 설문 항목 작성 페이지
 
 ---
 
@@ -65,9 +63,7 @@ const handleChange = (event: any, type: string, qi: number, oi?: any) => {
 
 해당 과정을 거쳐 `JSX` 렌더링 까지 처리하고 난 후 모습입니다. 원하는 만큼 질문과 항목을 추가 할 수 있게되었습니다.
 
-<br />
-
-# 설문 전 로그인 받기
+## 설문 전 로그인 받기
 
 ---
 
@@ -81,9 +77,7 @@ const handleChange = (event: any, type: string, qi: number, oi?: any) => {
 Nextauth를 사용 할 때, 배포 환경에서는 secret키가 필요합니다. [...nextauth].js 파일에 꼭 추가해주세요(한참 헤맸음)
 </div>
 
-<br /><br />
-
-# 설문 항목 선택 및 결과 보기
+## 설문 항목 선택 및 결과 보기
 
 ---
 
@@ -97,9 +91,7 @@ Nextauth를 사용 할 때, 배포 환경에서는 secret키가 필요합니다.
 
 [ApexCharts]: https://apexcharts.com/
 
-<br />
-
-# 얻은점
+## 얻은점
 
 ---
 

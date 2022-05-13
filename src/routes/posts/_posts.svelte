@@ -25,7 +25,7 @@
 <div class="flex flex-row w-screen">
   <div class="flex flex-col items-center w-screen xl:w-3/4">
     <section class="p-4 lg:p-12 xl:p-0">
-      <p class="lg:text-5xl text-2xl font-bold">{title}</p>
+      <p class="lg:text-4xl text-2xl font-bold">{title}</p>
       <div class="pt-8 w-40 border-b-2" />
       <div class="pt-3">
         <p>작성일: {date}</p>
