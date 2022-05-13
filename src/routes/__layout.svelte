@@ -22,27 +22,39 @@
   let mode
 
   onMount(() => { 
-    mode = window.localStorage.getItem('mode') || 'dark'
-    screen = window.matchMedia("(max-width: 1200px)")
-    if(mode === 'dark') window.document.body.classList.add('dark')
-    else window.document.body.classList.remove('dark')
+    mode = localStorage.getItem('mode') || 'dark'
   })
 
   const changeMode = () => {
     mode = mode === 'dark' ? 'white' : 'dark'
-    const message = {
-      type: 'set-theme',
-      theme: mode === 'dark' ? 'github-dark' : 'github-light'
-    }
-    
-    const utterances = document.querySelector('iframe')
-    if(utterances) utterances.contentWindow.postMessage(message, 'https://utteranc.es')
 
-    window.localStorage.setItem('mode', mode)
-	  window.document.body.classList.toggle('dark')
+    localStorage.setItem('mode', mode)
+	  document.documentElement.classList.toggle('dark')
+    
+    addEventListener('message', event => {
+      if (event.origin !== 'https://utteranc.es') {
+        return;
+      }
+      const message = {
+        type: 'set-theme',
+        theme: mode === 'dark' ? 'github-dark' : 'github-light'
+      }
+      const utterances = document.querySelector('iframe').contentWindow; // try event.source instead
+      utterances.postMessage(message, 'https://utteranc.es')
+    })
   }
 </script>
 
+<svelte:head>
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if(localStorage.getItem('mode') === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+	</script>
+</svelte:head>
 <div class="w-screen bg-white dark:bg-dark text-dark dark:text-white flex flex-col">
   <header class="h-12 flex flex-row justify-between p-4 items-center">
     <div>
