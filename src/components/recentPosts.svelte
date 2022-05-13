@@ -10,7 +10,7 @@
 <MediaQuery query="(min-width: 1281px)" let:matches>
   {#if matches}
   <section class="w-80">
-    <p class="inline-block border-b-2 dark:border-slate-600 border-dark mb-2">RECENT BLOG POSTS</p>
+    <p class="inline-block border-b-2 dark:border-slate-600 border-dark mb-2 font-semibold">RECENT BLOG POSTS</p>
     <ul>
       {#each posts as post}
         <li>
@@ -25,7 +25,7 @@
   </section>
 
   <section class="w-80">
-    <p class="inline-block border-b-2 mb-2 mt-8 dark:border-slate-600 border-dark">CATEGORIES</p>
+    <p class="inline-block border-b-2 mb-2 mt-8 dark:border-slate-600 border-dark font-semibold">CATEGORIES</p>
     {#if categories.length}
     <aside>
       <ul class="flex flex-wrap">
