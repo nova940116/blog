@@ -46,12 +46,12 @@
           </div>
           <div class="sm:ml-8">
             <p class="pb-4 italic">프론트엔드 개발자 윤정현 입니다. <br />개발자 경험을 향상시키기 위해 노력합니다 :)</p>
-            <ul>
+            <!-- <ul>
               <li>
                 <p class="font-bold">📧 EMAIL</p>
                 <p>nova940116@gmail.com</p>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <hr class="h-px border-0 bg-gradient-to-r from-fuchsia-500 to-cyan-500" />
