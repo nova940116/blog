@@ -1,6 +1,6 @@
 <script>
-  export let posts
   import MediaQuery from "../components/mediaQuery.svelte"
+  export let posts
   let categories = []
   posts.map(v => categories.push(...v.meta.categories))
   categories = [...new Set(categories)]

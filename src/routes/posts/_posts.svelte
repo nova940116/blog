@@ -5,11 +5,8 @@
 <script>
   import { onMount } from 'svelte'
   import Toc from 'svelte-toc'
-  import MediaQuery from "../../components/mediaQuery.svelte"
   export let title, date, update, categories, image, summary
-  let mode
-
-  onMount(() => { mode = window.localStorage.getItem('mode') || 'dark' })  
+  onMount(async () => { mode = window.localStorage.getItem('mode') || 'dark' })
 </script>
 
 <svelte:head>
@@ -88,7 +85,5 @@
     </section>
   </div>
 
-  <MediaQuery query="(min-width: 1281px)" let:matches>
-    <Toc title='' />
-  </MediaQuery>
+  <Toc title='' breakpoint="1431" />  
 </div>
