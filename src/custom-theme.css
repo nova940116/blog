@@ -53,11 +53,15 @@ code::before, code::after {
 h1 {
 	font-size: 2.4rem !important;
 }
+img {
+	border: 1px solid black;
+}
 
 pre[class*=language-js]:before { content: 'JavaScript'; }
 pre[class*=language-svelte]:before { content: 'Svelte'; }
 pre[class*=language-bash]:before { content: 'Terminal'; }
 pre[class*=language-html]:before { content: 'HTML'; }
+pre[class*=language-tsx]:before { content: 'TSX'; }
 pre[class*=language-fs]:before { content: 'Project Files'; }
 div[class*=side-note]::before { 
 	content: 'NOTE 💡';

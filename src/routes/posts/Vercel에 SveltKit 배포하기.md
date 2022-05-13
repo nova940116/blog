@@ -8,6 +8,7 @@ SvelteKit이 이와 다른점은 `Adapter` 를 통해 배포할 Target을 미리
 대표적인 정적 컨텐츠 호스팅 서비스중 하나인 `Vercel` 에 SvelteKit을 손쉽게 배포하는 방법을 알아보겠습니다.'
 categories:
   - 'SVELTE'
+  - 'SVELTEKIT'
   - 'JAVASCRIPT'
 ---
 
