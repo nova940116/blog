@@ -27,21 +27,16 @@
 
   const changeMode = () => {
     mode = mode === 'dark' ? 'white' : 'dark'
-
+    const message = {
+      type: 'set-theme',
+      theme: mode === 'dark' ? 'github-dark' : 'github-light'
+    }
+    
+    const utterances = document.querySelector('iframe')
+    if(utterances) utterances.contentWindow.postMessage(message, 'https://utteranc.es')
+    
     localStorage.setItem('mode', mode)
 	  document.documentElement.classList.toggle('dark')
-    
-    addEventListener('message', event => {
-      if (event.origin !== 'https://utteranc.es') {
-        return;
-      }
-      const message = {
-        type: 'set-theme',
-        theme: mode === 'dark' ? 'github-dark' : 'github-light'
-      }
-      const utterances = document.querySelector('iframe').contentWindow; // try event.source instead
-      utterances.postMessage(message, 'https://utteranc.es')
-    })
   }
 </script>
 
