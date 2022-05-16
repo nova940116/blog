@@ -6,6 +6,9 @@ aside.toc > nav > ul > li {
 aside.toc > nav > ul > .active { 
 	color: #fff;
 }
+aside.mobile {
+	color: #000;
+}
 
 /* responsive code block */
 @media screen and (max-width: 640px) {

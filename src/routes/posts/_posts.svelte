@@ -7,7 +7,9 @@
   import Toc from 'svelte-toc'
   export let title, date, update, categories, image, summary
   let mode
-  onMount(async () => { mode = localStorage.getItem('mode') || 'dark' })
+  onMount(async () => { 
+    mode = localStorage.getItem('mode') || 'dark' 
+  })
 </script>
 
 <svelte:head>
