@@ -27,7 +27,7 @@
 	/>
 </svelte:head>
 
-<section class="w-full xl:w-2/4 p-8 xl:p-0 ml-8">
+<ul class="w-full xl:w-2/4 p-8 xl:p-0 ml-8">
 	{#each posts as post}
 		<li class="mb-24 list-none">
 			<article class="block lg:grid lg:grid-cols-2 lg:gap-12">
@@ -38,7 +38,7 @@
 				<div class="mt-4 lg:mt-0">
 					<h1>
 						<a class="text-2xl font-bold hover:text-slate-400" href={post.path}>{post.meta.title}</a>
-						<p class=" py-2 font-bold text-gray-500">{post.meta.date}</p>
+						<p class=" py-2 font-bold text-[#888a8c]">{post.meta.date}</p>
 					</h1>
 					<p class="mt-5">{post.meta.summary}</p>
 					{#if post.meta.categories.length}
@@ -60,4 +60,4 @@
 			</article>
 		</li>
 	{/each}
-</section>
+</ul>
