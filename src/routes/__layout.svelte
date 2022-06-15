@@ -50,7 +50,7 @@
 		}
 	</script>
 </svelte:head>
-<div class="w-screen bg-white dark:bg-dark text-dark dark:text-white flex flex-col">
+<div class="w-screen max-w-full bg-white dark:bg-dark text-dark dark:text-white flex flex-col">
 	<header class="h-12 flex flex-row justify-between p-4 items-center">
 		<div>
 			<a href="/" class="text-lg font-bold">Nova Blog</a>
