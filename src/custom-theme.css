@@ -1,14 +1,3 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-html {
-	font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Noto Sans KR';
-}
-
-body {
-	overflow-x: hidden;
-}
-
 /* svelte-toc */
 aside.toc > nav > ul > li {
 	padding: 4px 8px;
