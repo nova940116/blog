@@ -5,8 +5,8 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 html {
-	font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Noto Sans KR';
+	font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Noto Sans KR';
 }
 
 body {

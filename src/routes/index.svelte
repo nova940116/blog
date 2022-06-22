@@ -27,7 +27,7 @@
 	/>
 </svelte:head>
 
-<ul class="w-full xl:w-2/4 p-8 xl:p-0 ml-8">
+<ul class="w-full xl:w-2/4 p-8 xl:p-0 xl:ml-8">
 	{#each posts as post}
 		<li class="mb-24 list-none">
 			<article class="block lg:grid lg:grid-cols-2 lg:gap-12">
